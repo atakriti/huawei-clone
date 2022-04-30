@@ -1,3 +1,9 @@
+/*
+- baner line 5
+- Whats New line 39
+- Fruits baner line 451
+-
+*/
 main{
     .baner{
         width: 100%;
@@ -17,7 +23,7 @@ main{
             justify-content: center;
             padding: 3% 0;
             button{
-                font-size: var(--fs-1);
+                font-size:var(--fs-1);
                 border: 1px black solid;
                 background-color: transparent;
                 padding: 1% 2%;
@@ -33,6 +39,7 @@ main{
     }
     // ============= WhatsNew =========
     .whatsNew{
+        padding: 3% 0;
         width: 70%;
         margin: 0 auto;
         display: flex;
@@ -440,5 +447,135 @@ main{
                 
             }
         }
+    }
+    // ================== Fruits baner =================
+    .fruits-baner{
+        width: 100%;
+        position: relative;
+        a{
+            display: flex;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .baner-btn{
+            width: 22%;
+            position: absolute;
+            display: flex;
+            justify-content: flex-end;
+            bottom: 0;
+            padding-bottom: 5%;
+            button{
+                font-size:var(--fs-1);
+                border: 1px white solid;
+                background-color: transparent;
+                padding: 2% 7%;
+                cursor: pointer;
+                transition: 0.7s;
+                color: white;
+                &:hover{
+                    border: 1px red solid;
+                    background-color: red;
+                    color:white;
+                }
+
+            }
+        }
+    }
+    // ================= News Events =================
+    .news{
+        border: 1px red solid;
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            text-align: center;
+            width: 20%;
+            position: relative;
+            font-size: var(--fs-h1);
+            padding: 0.5% 0;
+            &::after{
+                content: "";
+                background-color: red;
+                width: 3vw;
+                height: 0.2vw;
+                position: absolute;
+                bottom: 0;
+                right: 50%;
+                left: 40%;
+                top: 100%;
+            }
+        }
+        .news-con{
+        margin-top: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div{
+            width: 32%;
+            position: relative;
+            a{
+                display: flex;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .event{
+                position: absolute;
+                top: 0;
+                padding: 2% 3%;
+                color: white;
+                text-transform:uppercase;
+                background-color: rgba(128, 128, 128, 0.39);
+            }
+            // ========= new text
+            .news-text{
+                width: 100%;
+                padding: 2%;
+                display: flex;
+                flex-direction: column;
+                line-height: 1.5;
+                span{
+                    display: flex;
+                    flex-direction: column;
+                    width: 80%;
+                    h2{
+                        font-size: calc(var(--fs-h2) - 0.3vw);
+                    }
+                    .news-icons{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        .loc{
+                            width: 40%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            font-size: calc(var(--fs-1) - 0.2vw);
+                        }
+                        .cal{
+                            width: 48%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            font-size: calc(var(--fs-1) - 0.2vw);
+                        }
+                    }
+
+                }
+                p{
+                    font-size: calc(var(--fs-1) - 0.1vw);
+                }
+            }
+            &:nth-child(2){
+                width: 31.5%;
+            }
+        }
+     }
     }
 }
