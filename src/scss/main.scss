@@ -1,0 +1,13 @@
+@import "./var";
+@import "./header";
+@import "./main-con";
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Rubik:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+html{
+    --fs-1:1vw;
+}
