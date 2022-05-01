@@ -1,10 +1,10 @@
 header{
     background-color: white;
     width: 100%;
-    padding: 1% 5%;
+    padding: 0% 5% 0% 5%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     position: sticky;
     top: 0;
     z-index: 2;
@@ -26,12 +26,25 @@ header{
         width: 50%;
         li{
             list-style: none;
+            position: relative;
+            cursor: pointer;
+             padding: 3% 0;
             a{
                 text-decoration: none;
                 color: black;
                 font-size: 0.8vw;
             }
-            
+            &:hover{
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    background-color: red;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                }
+            }
         }
     }
     // ==========
