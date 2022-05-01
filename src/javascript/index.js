@@ -5,7 +5,7 @@ let button = () => {
         dropMenu.style.display = "block"
         dropMenu.style.animationName = "menu"
     } else {
-        
+        dropMenu.style.animationName = "menuUp"
          setTimeout(() => (dropMenu.style.display = "none"),500)
     }
 }
