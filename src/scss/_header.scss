@@ -67,6 +67,11 @@ header{
                 -webkit-text-stroke: 1px black;
                 color: white;
             }
+           
+        }
+        .fa-bars-staggered{
+            display: none;
+            font-size: var(--fs-1);
         }
         .fa-magnifying-glass{
             font-size: var(--fs-1);

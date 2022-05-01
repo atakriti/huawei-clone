@@ -10,6 +10,9 @@ main {
   .baner {
     width: 100%;
     position: relative;
+    .mo{
+        display: none;
+    }
     a {
       display: flex;
       img {
@@ -77,7 +80,9 @@ main {
         width: 66%;
         position: relative;
         overflow: hidden;
-
+        .mo{
+            display: none;
+        }
         a {
           display: flex;
           img {
@@ -95,7 +100,6 @@ main {
           line-height: 1.5;
           overflow: hidden;
           transition: 0.7s;
-
           p {
             font-size: var(--fs-1);
             color: white;
@@ -298,7 +302,9 @@ main {
         width: 66%;
         position: relative;
         overflow: hidden;
-
+        .mo{
+            display: none;
+        }
         a {
           display: flex;
           img {
@@ -452,6 +458,9 @@ main {
   .fruits-baner {
     width: 100%;
     position: relative;
+    .mo{
+        display: none;
+    }
     a {
       display: flex;
       img {
