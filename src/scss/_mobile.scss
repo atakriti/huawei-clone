@@ -1,310 +1,308 @@
-@media only screen and (max-width:800px) {
-    html{
-        --fs-1:3vw;
-        --fs-h1:4vw;
-        --fs-h2:3.5vw;
+@media only screen and (max-width: 800px) {
+  html {
+    --fs-1: 3vw;
+    --fs-h1: 4vw;
+    --fs-h2: 3.5vw;
+  }
+  header {
+    padding: 3% 5%;
+    z-index: 3;
+    .logo {
+      width: 18%;
     }
-    header{
-        padding: 3% 5%;
-        z-index: 3;
-        .logo{
-            width: 18%;
+    ul {
+      display: none;
+    }
+    .header-icons {
+      width: 28%;
+      button {
+        font-size: calc(var(--fs-1) + 0.2vw);
+        border: 1px gray solid;
+        border-radius: 20px;
+        padding: 4%;
+      }
+      .fa-bars-staggered {
+        display: block;
+        font-size: calc(var(--fs-1) + 0.5vw);
+      }
+      .fa-magnifying-glass {
+        display: none;
+      }
+    }
+  }
+  // =================== baner ===========
+  main {
+    position: relative;
+    // ============= baner ===========
+    .baner {
+      .des {
+        display: none;
+      }
+      .mo {
+        display: block;
+      }
+      .baner-btn {
+        padding: 10% 0;
+      }
+    }
+    // ========= Whats new =============
+    .whatsNew {
+      width: 100%;
+      padding: 3% 2%;
+      h1 {
+        width: 40%;
+        &::after {
+          width: 10vw;
+          height: 0.5vw;
+          left: 37%;
         }
-        ul{
+      }
+      // ============ first row
+      .first-row {
+        flex-wrap: wrap;
+        .one {
+          width: 100%;
+          margin-bottom: 3%;
+          .des {
             display: none;
-            
-        }
-        .header-icons{
-            width: 28%;
-            button{
-                font-size: calc(var(--fs-1) + 0.2vw);
-                border: 1px gray solid;
-                border-radius:20px;
-                padding: 4%;
-            }
-            .fa-bars-staggered{
-                display: block;
-                font-size: calc(var(--fs-1) + 0.5vw);
-
-            }
-            .fa-magnifying-glass{
-                display: none;
-            }
-        }
-    }
-    // =================== baner ===========
-    main{
-        position: relative;
-        // ============= baner ===========
-        .baner{
-            .des{
-                display: none;
-            }
-            .mo{
-                display: block;
-            }
-            .baner-btn{
-                padding: 10% 0;
-            }
-        }
-        // ========= Whats new =============
-        .whatsNew{
-            width: 100%;
-            padding: 3% 2%;
-            h1{
-                width: 40%;
-                &::after{
-                    width: 10vw;
-                    height: 0.5vw;
-                    left: 37%;
-                }
-            }
-            // ============ first row 
-            .first-row{
-                flex-wrap: wrap;
-                .one{
-                    width: 100%;
-                    margin-bottom: 3%;
-                    .des{
-                        display: none;
-                    }
-                    .mo{
-                        display: block;
-                    }
-                    .row-text{
-                        button{
-                            width: 43%;
-                        }
-                    }
-                }
-                // two 
-                .two{
-                    width: 100%;
-                    margin-bottom: 3%;
-                    .row-text{
-                        button{
-                            width: 73%;
-                        }
-                    }
-                }
-            }
-            // ============= Second row 
-            .second-row{
-                flex-wrap: wrap;
-                .three{
-                    width: 100%;
-                    margin-bottom: 3%;
-                    .row-text {
-                        button{
-                            width: 40%;
-                        }
-                    }
-                }
-                // Four
-                .four{
-                    width: 100%;
-                    // margin-bottom: 3%;
-                    .des{
-                        display: none;
-                    }
-                    .mo{
-                        display: block;
-                    }
-                    .row-text {
-                        button{
-                            width: 27%;
-                        }
-                    }
-                }
-            }
-            // ==================== third row 
-            .third-row{
-                flex-wrap: wrap;
-                .five,
-                .six,
-                .seven{
-                    width: 100%;
-                    margin-bottom: 3%;
-                    .row-text {
-                        button{
-                            width: 35%;
-                        }
-                    }
-                }
-            }
-           
-        }
-         // ========================= Fruits ===================
-         .fruits-baner{
-            .des{
-                display: none;
-            }
-            .mo{
-                display: block;
-            }
-            .baner-btn{
-                width: 28%;
-                
-                button{
-                    padding: 4% 10%;
-                }
-            }
-        }
-        // ================== New Events ================
-        .news{
-            width: 100%;
-            h1{
-                width: 40%;
-                &::after{
-                    width: 14vw;
-                    height: 0.5vw;
-                    left: 32%;
-                }
-            }
-            .news-con{
-                flex-wrap: wrap;
-                .news-div{
-                    width: 100%;
-                    height: auto;
-                    margin-bottom: 3%;
-                    .news-text{
-                        span{
-                            width: 60%;
-                        }
-                    }
-                    &:nth-child(2){
-                        .news-text{
-                            span{
-                                width: 55%;
-                            }
-                        }
-                    }
-                }
-                .news-div-third{
-                    width: 100%;
-                    height: auto;
-                }
-            }
-            // Buttons
-            .news-buttons{
-                width: 50%;
-            }
-        }
-        .menu{
+          }
+          .mo {
             display: block;
-            position: fixed;
-            top: 0;
-            right: 0;
-            z-index: 1;
-            width: 100%;
-            background-color: rgba(218, 165, 32, 0.808);
-            height: 100vw;
-            padding: 10% 5%;
-            transition: 0.7s;
-            animation: menu 1s ;
-           ul{
-               height: 100%;
-               display: flex;
-               flex-direction: column;
-               justify-content: space-around;
-            //    padding-top: 5%;
-               li{
-                   list-style: none;
-                   border-bottom: 1px white dashed;
-                   white-space: nowrap;
-                   a{
-                       text-decoration: none;
-                       font-size: var(--fs-h1);
-                       display: flex;
-                       padding: 5% 0;
-                       color: white;
-                     
-                   }
-               }
-           }
-         #exit{
+          }
+          .row-text {
+            button {
+              width: 43%;
+            }
+          }
+        }
+        // two
+        .two {
+          width: 100%;
+          margin-bottom: 3%;
+          .row-text {
+            button {
+              width: 73%;
+            }
+          }
+        }
+      }
+      // ============= Second row
+      .second-row {
+        flex-wrap: wrap;
+        .three {
+          width: 100%;
+          margin-bottom: 3%;
+          .row-text {
+            button {
+              width: 40%;
+            }
+          }
+        }
+        // Four
+        .four {
+          width: 100%;
+          // margin-bottom: 3%;
+          .des {
+            display: none;
+          }
+          .mo {
+            display: block;
+          }
+          .row-text {
+            button {
+              width: 27%;
+            }
+          }
+        }
+      }
+      // ==================== third row
+      .third-row {
+        flex-wrap: wrap;
+        .five,
+        .six,
+        .seven {
+          width: 100%;
+          margin-bottom: 3%;
+          .row-text {
+            button {
+              width: 35%;
+            }
+          }
+        }
+      }
+    }
+    // ========================= Fruits ===================
+    .fruits-baner {
+      .des {
+        display: none;
+      }
+      .mo {
+        display: block;
+      }
+      .baner-btn {
+        width: 28%;
+
+        button {
+          padding: 4% 10%;
+        }
+      }
+    }
+    // ================== New Events ================
+    .news {
+      width: 100%;
+      h1 {
+        width: 40%;
+        &::after {
+          width: 14vw;
+          height: 0.5vw;
+          left: 32%;
+        }
+      }
+      .news-con {
+        flex-wrap: wrap;
+        .news-div {
+          width: 100%;
+          height: auto;
+          margin-bottom: 3%;
+          .news-text {
+            span {
+              width: 60%;
+            }
+          }
+          &:nth-child(2) {
+            .news-text {
+              span {
+                width: 55%;
+              }
+            }
+          }
+        }
+        .news-div-third {
+          width: 100%;
+          height: auto;
+        }
+      }
+      // Buttons
+      .news-buttons {
+        width: 50%;
+      }
+    }
+    .menu {
+      display: block;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      width: 100%;
+      background-color: rgba(218, 165, 32, 0.808);
+      height: 100vw;
+      padding: 10% 5%;
+      transition: 0.7s;
+      animation: menu 1s;
+      ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        //    padding-top: 5%;
+        li {
+          list-style: none;
+          border-bottom: 1px white dashed;
+          white-space: nowrap;
+          a {
+            text-decoration: none;
+            font-size: var(--fs-h1);
             display: flex;
-            justify-content: flex-end;
-            .exitCon{
-                width: 0%;
-                overflow: hidden;
-                animation: exit 3s forwards ;
-                animation-delay: 1s;
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                .fa-circle-xmark{
-                    font-size: calc(var(--fs-h1) + 1vw);
-                    color: red;
-                 width: fit-content;
-                 animation: exitButton 5s ;
-                }
-                p{
-                    font-size: var(--fs-h1);
-                    margin-left: 5%;
-                    color: white;
-                }
-               }
-         }
+            padding: 5% 0;
+            color: white;
+          }
         }
-         // ========================= FOOTER ======================
-    footer{
-        .footer-con{
-            width: 100%;
-            padding: 0 3%;
-            .footer-form{
-                padding: 3% 0;
-                form{
-                    width: 50%;
-                }
-            }
-            .footer-links{
-                flex-wrap: wrap;
-                padding: 5% 0;
-                ul{
-                    width: 49%;
-                    margin-bottom: 7%;
-                }
-            }
+      }
+      #exit {
+        display: flex;
+        justify-content: flex-end;
+        .exitCon {
+          width: 0%;
+          overflow: hidden;
+          animation: exit 3s forwards;
+          animation-delay: 1s;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          .fa-circle-xmark {
+            font-size: calc(var(--fs-h1) + 1vw);
+            color: red;
+            width: fit-content;
+            animation: exitButton 5s;
+          }
+          p {
+            font-size: var(--fs-h1);
+            margin-left: 5%;
+            color: white;
+          }
         }
+      }
     }
-
+    // ========================= FOOTER ======================
+    footer {
+      .footer-con {
+        width: 100%;
+        padding: 0 3%;
+        .footer-form {
+          padding: 3% 0;
+          form {
+            width: 50%;
+          }
+        }
+        .footer-links {
+          flex-wrap: wrap;
+          padding: 5% 0;
+          ul {
+            width: 49%;
+            margin-bottom: 7%;
+          }
+        }
+      }
     }
-    @keyframes menu {
-        from{
-            width: 20%;
-        }
-        to{
-            width: 100%;
-        }
+  }
+  @keyframes menu {
+    from {
+      width: 20%;
     }
-    @keyframes menuUp {
-        from{
-            width: 100%;
-        }
-        to{
-            width: 0%;
-        }
+    to {
+      width: 100%;
     }
-    @keyframes exit {
-        from{
-           
-            width: 0%;
-        }
-        to{
-           
-            width: 100%;
-           
-        }
+  }
+  @keyframes menuUp {
+    from {
+      width: 100%;
     }
-    @keyframes exitButton {
-        from{
-            transform: rotateZ(0turn);
-
-        }
-        to{
-            transform: rotateZ(4turn);
-        }
+    to {
+      width: 0%;
     }
-   
+  }
+  @keyframes exit {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes exitButton {
+    from {
+      transform: rotateZ(0turn);
+    }
+    to {
+      transform: rotateZ(4turn);
+    }
+  }
+}
+// =====================================
+@media only screen and (min-width: 1150px) {
+  html {
+    --fs-1: 0.8rem;
+    --fs-h1: 1.3rem;
+    --fs-h2: 1rem;
+  }
 }

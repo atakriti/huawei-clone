@@ -189,7 +189,7 @@ main {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 60%;
+            width: 80%;
             padding: 1% 0;
             background-color: transparent;
             border: none;
@@ -198,6 +198,7 @@ main {
             transform: translateY(120%);
             transition: 0.7s;
             opacity: 0;
+            white-space: nowrap;
             i {
               color: red;
             }
