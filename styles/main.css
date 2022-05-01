@@ -1,0 +1,1078 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Rubik:ital@1&display=swap");
+html {
+  --fs-1:1vw;
+  --fs-h1:2vw;
+  --fs-h2:1.3vw;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  padding: 0% 5% 0% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+header .logo {
+  width: 7%;
+}
+header .logo a {
+  display: flex;
+}
+header .logo a img {
+  width: 100%;
+  height: 100%;
+}
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+header ul li {
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  padding: 3% 0;
+  white-space: nowrap;
+}
+header ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: var(--fs-1);
+}
+header ul li:hover::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+header .header-icons {
+  width: 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header-icons button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  font-size: var(--fs-1);
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+header .header-icons button i {
+  -webkit-text-stroke: 1px black;
+  color: white;
+}
+header .header-icons .fa-bars-staggered {
+  display: none;
+  font-size: var(--fs-1);
+}
+header .header-icons .fa-magnifying-glass {
+  font-size: var(--fs-1);
+  cursor: pointer;
+}
+
+/*
+- Header in header file
+- baner line 5
+- Whats New line 39
+- Fruits baner line 451
+- News && Events line 484
+- Footer in footer file
+*/
+main .baner {
+  width: 100%;
+  position: relative;
+}
+main .baner .mo {
+  display: none;
+}
+main .baner a {
+  display: flex;
+}
+main .baner a img {
+  width: 100%;
+  height: 100%;
+}
+main .baner .baner-btn {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 3% 0;
+}
+main .baner .baner-btn button {
+  font-size: var(--fs-1);
+  border: 1px black solid;
+  background-color: transparent;
+  padding: 1% 2%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+main .baner .baner-btn button:hover {
+  border: 1px red solid;
+  background-color: red;
+  color: white;
+}
+main .whatsNew {
+  padding: 3% 0;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .whatsNew h1 {
+  text-align: center;
+  width: 20%;
+  position: relative;
+  font-size: var(--fs-h1);
+  padding: 0.5% 0;
+}
+main .whatsNew h1::after {
+  content: "";
+  background-color: red;
+  width: 3vw;
+  height: 0.2vw;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  left: 40%;
+  top: 100%;
+}
+main .whatsNew .first-row {
+  margin: 3% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .whatsNew .first-row .one {
+  width: 66%;
+  position: relative;
+  overflow: hidden;
+}
+main .whatsNew .first-row .one .mo {
+  display: none;
+}
+main .whatsNew .first-row .one a {
+  display: flex;
+}
+main .whatsNew .first-row .one a img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.7);
+  transition: 0.7s;
+}
+main .whatsNew .first-row .one .row-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1% 2%;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: 0.7s;
+}
+main .whatsNew .first-row .one .row-text p {
+  font-size: var(--fs-1);
+  color: white;
+}
+main .whatsNew .first-row .one .row-text h2 {
+  font-size: var(--fs-h2);
+  color: white;
+}
+main .whatsNew .first-row .one .row-text h3 {
+  font-size: var(--fs-1);
+  color: rgb(199, 199, 199);
+  font-weight: lighter;
+}
+main .whatsNew .first-row .one .row-text button {
+  font-size: var(--fs-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  padding: 1% 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  transform: translateY(120%);
+  transition: 0.7s;
+  opacity: 0;
+}
+main .whatsNew .first-row .one .row-text button i {
+  color: red;
+}
+main .whatsNew .first-row .one:hover a img {
+  transform: scale(1.05);
+  filter: brightness(0.5);
+}
+main .whatsNew .first-row .one:hover .row-text {
+  padding-bottom: 3%;
+}
+main .whatsNew .first-row .one:hover .row-text button {
+  transform: translateY(0);
+  transition: 0.7s;
+  opacity: 1;
+}
+main .whatsNew .first-row .two {
+  width: 32%;
+  position: relative;
+  overflow: hidden;
+}
+main .whatsNew .first-row .two a {
+  display: flex;
+}
+main .whatsNew .first-row .two a img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.9);
+  transition: 0.7s;
+}
+main .whatsNew .first-row .two .row-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1% 2%;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: 0.7s;
+}
+main .whatsNew .first-row .two .row-text p {
+  font-size: var(--fs-1);
+  color: white;
+}
+main .whatsNew .first-row .two .row-text h2 {
+  font-size: var(--fs-h2);
+  color: white;
+}
+main .whatsNew .first-row .two .row-text h3 {
+  font-size: var(--fs-1);
+  color: rgb(199, 199, 199);
+  font-weight: lighter;
+}
+main .whatsNew .first-row .two .row-text button {
+  font-size: var(--fs-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  padding: 1% 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  transform: translateY(120%);
+  transition: 0.7s;
+  opacity: 0;
+  white-space: nowrap;
+}
+main .whatsNew .first-row .two .row-text button i {
+  color: red;
+}
+main .whatsNew .first-row .two:hover a img {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+main .whatsNew .first-row .two:hover .row-text {
+  padding-bottom: 3%;
+}
+main .whatsNew .first-row .two:hover .row-text button {
+  transform: translateY(0);
+  transition: 0.7s;
+  opacity: 1;
+}
+main .whatsNew .second-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .whatsNew .second-row .three {
+  width: 32%;
+  position: relative;
+  overflow: hidden;
+}
+main .whatsNew .second-row .three a {
+  display: flex;
+}
+main .whatsNew .second-row .three a img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.9);
+  transition: 0.7s;
+}
+main .whatsNew .second-row .three .row-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1% 2%;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: 0.7s;
+}
+main .whatsNew .second-row .three .row-text p {
+  font-size: var(--fs-1);
+  color: white;
+}
+main .whatsNew .second-row .three .row-text h2 {
+  font-size: var(--fs-h2);
+  color: white;
+}
+main .whatsNew .second-row .three .row-text h3 {
+  font-size: var(--fs-1);
+  color: rgb(199, 199, 199);
+  font-weight: lighter;
+}
+main .whatsNew .second-row .three .row-text button {
+  font-size: var(--fs-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 35%;
+  padding: 1% 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  transform: translateY(120%);
+  transition: 0.7s;
+  opacity: 0;
+}
+main .whatsNew .second-row .three .row-text button i {
+  color: red;
+}
+main .whatsNew .second-row .three:hover a img {
+  transform: scale(1.05);
+  filter: brightness(0.7);
+}
+main .whatsNew .second-row .three:hover .row-text {
+  padding-bottom: 3%;
+}
+main .whatsNew .second-row .three:hover .row-text button {
+  transform: translateY(0);
+  transition: 0.7s;
+  opacity: 1;
+}
+main .whatsNew .second-row .four {
+  width: 66%;
+  position: relative;
+  overflow: hidden;
+}
+main .whatsNew .second-row .four .mo {
+  display: none;
+}
+main .whatsNew .second-row .four a {
+  display: flex;
+}
+main .whatsNew .second-row .four a img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.7);
+  transition: 0.7s;
+}
+main .whatsNew .second-row .four .row-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1% 2%;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: 0.7s;
+}
+main .whatsNew .second-row .four .row-text p {
+  font-size: var(--fs-1);
+  color: white;
+}
+main .whatsNew .second-row .four .row-text h2 {
+  font-size: var(--fs-h2);
+  color: white;
+}
+main .whatsNew .second-row .four .row-text h3 {
+  font-size: var(--fs-1);
+  color: rgb(199, 199, 199);
+  font-weight: lighter;
+}
+main .whatsNew .second-row .four .row-text button {
+  font-size: var(--fs-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  padding: 1% 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  transform: translateY(120%);
+  transition: 0.7s;
+  opacity: 0;
+}
+main .whatsNew .second-row .four .row-text button i {
+  color: red;
+}
+main .whatsNew .second-row .four:hover a img {
+  transform: scale(1.05);
+  filter: brightness(0.5);
+}
+main .whatsNew .second-row .four:hover .row-text {
+  padding-bottom: 3%;
+}
+main .whatsNew .second-row .four:hover .row-text button {
+  transform: translateY(0);
+  transition: 0.7s;
+  opacity: 1;
+}
+main .whatsNew .third-row {
+  margin: 3% 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .whatsNew .third-row .five,
+main .whatsNew .third-row .six,
+main .whatsNew .third-row .seven {
+  width: 32%;
+  position: relative;
+  overflow: hidden;
+}
+main .whatsNew .third-row .five a,
+main .whatsNew .third-row .six a,
+main .whatsNew .third-row .seven a {
+  display: flex;
+}
+main .whatsNew .third-row .five a img,
+main .whatsNew .third-row .six a img,
+main .whatsNew .third-row .seven a img {
+  width: 100%;
+  height: 100%;
+  filter: brightness(0.9);
+  transition: 0.7s;
+}
+main .whatsNew .third-row .five .row-text,
+main .whatsNew .third-row .six .row-text,
+main .whatsNew .third-row .seven .row-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1% 2%;
+  line-height: 1.5;
+  overflow: hidden;
+  transition: 0.7s;
+}
+main .whatsNew .third-row .five .row-text p,
+main .whatsNew .third-row .six .row-text p,
+main .whatsNew .third-row .seven .row-text p {
+  font-size: var(--fs-1);
+  color: white;
+}
+main .whatsNew .third-row .five .row-text h2,
+main .whatsNew .third-row .six .row-text h2,
+main .whatsNew .third-row .seven .row-text h2 {
+  font-size: var(--fs-h2);
+  color: white;
+}
+main .whatsNew .third-row .five .row-text h3,
+main .whatsNew .third-row .six .row-text h3,
+main .whatsNew .third-row .seven .row-text h3 {
+  font-size: var(--fs-1);
+  color: rgb(199, 199, 199);
+  font-weight: lighter;
+}
+main .whatsNew .third-row .five .row-text button,
+main .whatsNew .third-row .six .row-text button,
+main .whatsNew .third-row .seven .row-text button {
+  font-size: var(--fs-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 31%;
+  padding: 1% 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  transform: translateY(120%);
+  transition: 0.7s;
+  opacity: 0;
+}
+main .whatsNew .third-row .five .row-text button i,
+main .whatsNew .third-row .six .row-text button i,
+main .whatsNew .third-row .seven .row-text button i {
+  color: red;
+}
+main .whatsNew .third-row .five:hover a img,
+main .whatsNew .third-row .six:hover a img,
+main .whatsNew .third-row .seven:hover a img {
+  transform: scale(1.05);
+  filter: brightness(0.5);
+}
+main .whatsNew .third-row .five:hover .row-text,
+main .whatsNew .third-row .six:hover .row-text,
+main .whatsNew .third-row .seven:hover .row-text {
+  padding-bottom: 3%;
+}
+main .whatsNew .third-row .five:hover .row-text button,
+main .whatsNew .third-row .six:hover .row-text button,
+main .whatsNew .third-row .seven:hover .row-text button {
+  transform: translateY(0);
+  transition: 0.7s;
+  opacity: 1;
+}
+main .fruits-baner {
+  width: 100%;
+  position: relative;
+}
+main .fruits-baner .mo {
+  display: none;
+}
+main .fruits-baner a {
+  display: flex;
+}
+main .fruits-baner a img {
+  height: 100%;
+  width: 100%;
+}
+main .fruits-baner .baner-btn {
+  width: 22%;
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  bottom: 0;
+  padding-bottom: 5%;
+}
+main .fruits-baner .baner-btn button {
+  font-size: var(--fs-1);
+  border: 1px white solid;
+  background-color: transparent;
+  padding: 2% 7%;
+  cursor: pointer;
+  transition: 0.7s;
+  color: white;
+}
+main .fruits-baner .baner-btn button:hover {
+  border: 1px red solid;
+  background-color: red;
+  color: white;
+}
+main .news {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2% 0;
+}
+main .news h1 {
+  text-align: center;
+  width: 20%;
+  position: relative;
+  font-size: var(--fs-h1);
+  padding: 0.5% 0;
+}
+main .news h1::after {
+  content: "";
+  background-color: red;
+  width: 3vw;
+  height: 0.2vw;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  left: 40%;
+  top: 100%;
+}
+main .news .news-con {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+main .news .news-con .news-div {
+  width: 32%;
+  position: relative;
+  min-height: 22vw;
+}
+main .news .news-con .news-div a {
+  display: flex;
+}
+main .news .news-con .news-div a img {
+  width: 100%;
+  height: 100%;
+}
+main .news .news-con .news-div .event {
+  position: absolute;
+  top: 0;
+  padding: 2% 3%;
+  color: white;
+  text-transform: uppercase;
+  background-color: rgba(128, 128, 128, 0.699);
+  font-size: calc(var(--fs-1) - 0.2vw);
+}
+main .news .news-con .news-div .news-text {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  background-color: rgb(241, 241, 241);
+}
+main .news .news-con .news-div .news-text span {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+main .news .news-con .news-div .news-text span h2 {
+  font-size: calc(var(--fs-h2) - 0.3vw);
+}
+main .news .news-con .news-div .news-text span .news-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+main .news .news-con .news-div .news-text span .news-icons .loc {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: calc(var(--fs-1) - 0.2vw);
+}
+main .news .news-con .news-div .news-text span .news-icons .cal {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: calc(var(--fs-1) - 0.2vw);
+}
+main .news .news-con .news-div .news-text p {
+  font-size: calc(var(--fs-1) - 0.1vw);
+}
+main .news .news-con .news-div-third {
+  width: 32%;
+  height: 21.6vw;
+  overflow-y: scroll;
+  background-color: rgb(241, 241, 241);
+  position: relative;
+}
+main .news .news-con .news-div-third .third-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120%;
+}
+main .news .news-con .news-div-third .third-con span {
+  line-height: 1.5;
+  padding: 2%;
+}
+main .news .news-con .news-div-third .third-con span p {
+  font-size: calc(var(--fs-h2) - 0.3vw);
+  font-weight: bold;
+}
+main .news .news-con .news-div-third .third-con span small {
+  font-size: calc(var(--fs-1) - 0.2vw);
+  color: gray;
+}
+main .news .news-con .news-div-third::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0.3vw;
+}
+main .news .news-con .news-div-third::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 20px;
+}
+main .news .news-con .news-div-third .type {
+  position: sticky;
+  width: 15%;
+  top: 0;
+  left: 0;
+  padding: 2%;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.699);
+  font-size: calc(var(--fs-1) - 0.2vw);
+}
+main .news .news-buttons {
+  width: 27%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3%;
+}
+main .news .news-buttons button {
+  font-size: var(--fs-1);
+  background-color: transparent;
+  border: 1px black solid;
+  padding: 2% 7%;
+  outline: none;
+  cursor: pointer;
+  transition: 0.7s;
+}
+main .news .news-buttons button:hover {
+  background-color: red;
+  color: white;
+  border: 1px red solid;
+}
+main .menu {
+  display: none;
+}
+
+main footer {
+  background-color: #f2f2f2;
+  padding: 3% 0;
+}
+main footer .footer-con {
+  width: 70%;
+  margin: 0 auto;
+}
+main footer .footer-con .footer-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 0;
+  border-bottom: 1px gray solid;
+}
+main footer .footer-con .footer-form a {
+  font-size: var(--fs-1);
+  text-decoration: none;
+  color: black;
+}
+main footer .footer-con .footer-form form {
+  border: 1px gray solid;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0.5% 0;
+}
+main footer .footer-con .footer-form form input {
+  width: 100%;
+  font-size: var(--fs-1);
+  padding: 1%;
+  padding-left: 3%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+main footer .footer-con .footer-form form i {
+  font-size: var(--fs-h2);
+  padding: 1% 2%;
+  border-left: 1px black solid;
+}
+main footer .footer-con .footer-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 3% 0;
+}
+main footer .footer-con .footer-links ul {
+  width: 19%;
+  line-height: 1.6;
+}
+main footer .footer-con .footer-links ul p {
+  font-weight: bold;
+  font-size: var(--fs-1);
+  margin-bottom: 2%;
+}
+main footer .footer-con .footer-links ul li {
+  list-style: none;
+}
+main footer .footer-con .footer-links ul li a {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-size: calc(var(--fs-1) - 0.2vw);
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    --fs-1: 3vw;
+    --fs-h1: 4vw;
+    --fs-h2: 3.5vw;
+  }
+
+  header {
+    padding: 3% 5%;
+    z-index: 3;
+  }
+  header .logo {
+    width: 18%;
+  }
+  header ul {
+    display: none;
+  }
+  header .header-icons {
+    width: 28%;
+  }
+  header .header-icons button {
+    font-size: calc(var(--fs-1) + 0.2vw);
+    border: 1px gray solid;
+    border-radius: 20px;
+    padding: 4%;
+  }
+  header .header-icons .fa-bars-staggered {
+    display: block;
+    font-size: calc(var(--fs-1) + 0.5vw);
+  }
+  header .header-icons .fa-magnifying-glass {
+    display: none;
+  }
+
+  main {
+    position: relative;
+  }
+  main .baner .des {
+    display: none;
+  }
+  main .baner .mo {
+    display: block;
+  }
+  main .baner .baner-btn {
+    padding: 10% 0;
+  }
+  main .whatsNew {
+    width: 100%;
+    padding: 3% 2%;
+  }
+  main .whatsNew h1 {
+    width: 40%;
+  }
+  main .whatsNew h1::after {
+    width: 10vw;
+    height: 0.5vw;
+    left: 37%;
+  }
+  main .whatsNew .first-row {
+    flex-wrap: wrap;
+  }
+  main .whatsNew .first-row .one {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  main .whatsNew .first-row .one .des {
+    display: none;
+  }
+  main .whatsNew .first-row .one .mo {
+    display: block;
+  }
+  main .whatsNew .first-row .one .row-text button {
+    width: 43%;
+  }
+  main .whatsNew .first-row .two {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  main .whatsNew .first-row .two .row-text button {
+    width: 73%;
+  }
+  main .whatsNew .second-row {
+    flex-wrap: wrap;
+  }
+  main .whatsNew .second-row .three {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  main .whatsNew .second-row .three .row-text button {
+    width: 40%;
+  }
+  main .whatsNew .second-row .four {
+    width: 100%;
+  }
+  main .whatsNew .second-row .four .des {
+    display: none;
+  }
+  main .whatsNew .second-row .four .mo {
+    display: block;
+  }
+  main .whatsNew .second-row .four .row-text button {
+    width: 27%;
+  }
+  main .whatsNew .third-row {
+    flex-wrap: wrap;
+  }
+  main .whatsNew .third-row .five,
+main .whatsNew .third-row .six,
+main .whatsNew .third-row .seven {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+  main .whatsNew .third-row .five .row-text button,
+main .whatsNew .third-row .six .row-text button,
+main .whatsNew .third-row .seven .row-text button {
+    width: 35%;
+  }
+  main .fruits-baner .des {
+    display: none;
+  }
+  main .fruits-baner .mo {
+    display: block;
+  }
+  main .fruits-baner .baner-btn {
+    width: 28%;
+  }
+  main .fruits-baner .baner-btn button {
+    padding: 4% 10%;
+  }
+  main .news {
+    width: 100%;
+  }
+  main .news h1 {
+    width: 40%;
+  }
+  main .news h1::after {
+    width: 14vw;
+    height: 0.5vw;
+    left: 32%;
+  }
+  main .news .news-con {
+    flex-wrap: wrap;
+  }
+  main .news .news-con .news-div {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3%;
+  }
+  main .news .news-con .news-div .news-text span {
+    width: 60%;
+  }
+  main .news .news-con .news-div:nth-child(2) .news-text span {
+    width: 55%;
+  }
+  main .news .news-con .news-div-third {
+    width: 100%;
+    height: auto;
+  }
+  main .news .news-buttons {
+    width: 50%;
+  }
+  main .menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgba(218, 165, 32, 0.808);
+    height: 100vw;
+    padding: 10% 5%;
+    transition: 0.7s;
+    animation: menu 1s;
+  }
+  main .menu ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  main .menu ul li {
+    list-style: none;
+    border-bottom: 1px white dashed;
+    white-space: nowrap;
+  }
+  main .menu ul li a {
+    text-decoration: none;
+    font-size: var(--fs-h1);
+    display: flex;
+    padding: 5% 0;
+    color: white;
+  }
+  main .menu #exit {
+    display: flex;
+    justify-content: flex-end;
+  }
+  main .menu #exit .exitCon {
+    width: 0%;
+    overflow: hidden;
+    animation: exit 3s forwards;
+    animation-delay: 1s;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  main .menu #exit .exitCon .fa-circle-xmark {
+    font-size: calc(var(--fs-h1) + 1vw);
+    color: red;
+    width: fit-content;
+    animation: exitButton 5s;
+  }
+  main .menu #exit .exitCon p {
+    font-size: var(--fs-h1);
+    margin-left: 5%;
+    color: white;
+  }
+  main footer .footer-con {
+    width: 100%;
+    padding: 0 3%;
+  }
+  main footer .footer-con .footer-form {
+    padding: 3% 0;
+  }
+  main footer .footer-con .footer-form form {
+    width: 50%;
+  }
+  main footer .footer-con .footer-links {
+    flex-wrap: wrap;
+    padding: 5% 0;
+  }
+  main footer .footer-con .footer-links ul {
+    width: 49%;
+    margin-bottom: 7%;
+  }
+
+  @keyframes menu {
+    from {
+      width: 20%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes menuUp {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0%;
+    }
+  }
+  @keyframes exit {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes exitButton {
+    from {
+      transform: rotateZ(0turn);
+    }
+    to {
+      transform: rotateZ(4turn);
+    }
+  }
+}
+@media only screen and (min-width: 1150px) {
+  html {
+    --fs-1: 0.8rem;
+    --fs-h1: 1.3rem;
+    --fs-h2: 1rem;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*# sourceMappingURL=main.css.map */
