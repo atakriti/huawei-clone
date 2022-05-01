@@ -4,578 +4,624 @@
 - Fruits baner line 451
 -
 */
-main{
-    .baner{
+main {
+  .baner {
+    width: 100%;
+    position: relative;
+    a {
+      display: flex;
+      img {
         width: 100%;
-        position: relative;
-        a{
-            display: flex;
-            img{
-                width: 100%;
-                height: 100%;
-            }
+        height: 100%;
+      }
+    }
+    .baner-btn {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding: 3% 0;
+      button {
+        font-size: var(--fs-1);
+        border: 1px black solid;
+        background-color: transparent;
+        padding: 1% 2%;
+        cursor: pointer;
+        transition: 0.7s;
+        &:hover {
+          border: 1px red solid;
+          background-color: red;
+          color: white;
         }
-        .baner-btn{
-            position: absolute;
-            bottom: 0;
-            display: flex;
+      }
+    }
+  }
+  // ============= WhatsNew =========
+  .whatsNew {
+    padding: 3% 0;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      text-align: center;
+      width: 20%;
+      position: relative;
+      font-size: var(--fs-h1);
+      padding: 0.5% 0;
+      &::after {
+        content: "";
+        background-color: red;
+        width: 3vw;
+        height: 0.2vw;
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        left: 40%;
+        top: 100%;
+      }
+    }
+    // =============== First row =====================
+    .first-row {
+      margin: 3% 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      // ======== one
+      .one {
+        width: 66%;
+        position: relative;
+        overflow: hidden;
+
+        a {
+          display: flex;
+          img {
             width: 100%;
-            justify-content: center;
-            padding: 3% 0;
-            button{
-                font-size:var(--fs-1);
-                border: 1px black solid;
-                background-color: transparent;
-                padding: 1% 2%;
-                cursor: pointer;
-                transition: 0.7s;
-                &:hover{
-                    border: 1px red solid;
-                    background-color: red;
-                    color:white;
-                }
-            }
+            height: 100%;
+            filter: brightness(0.7);
+            transition: 0.7s;
+          }
         }
-    }
-    // ============= WhatsNew =========
-    .whatsNew{
-        padding: 3% 0;
-        width: 70%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h1{
-            text-align: center;
-            width: 20%;
-            position: relative;
-            font-size: var(--fs-h1);
-            padding: 0.5% 0;
-            &::after{
-                content: "";
-                background-color: red;
-                width: 3vw;
-                height: 0.2vw;
-                position: absolute;
-                bottom: 0;
-                right: 50%;
-                left: 40%;
-                top: 100%;
-            }
-        }
-        // =============== First row =====================
-        .first-row{
-            margin: 3% 0;
+        .row-text {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 1% 2%;
+          line-height: 1.5;
+          overflow: hidden;
+          transition: 0.7s;
+
+          p {
+            font-size: var(--fs-1);
+            color: white;
+          }
+          h2 {
+            font-size: var(--fs-h2);
+            color: white;
+          }
+          h3 {
+            font-size: var(--fs-1);
+            color: rgb(199, 199, 199);
+            font-weight: lighter;
+          }
+          button {
+            font-size: var(--fs-1);
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            
-            // ======== one
-            .one{
-                width: 66%;
-                position: relative;
-                overflow: hidden;
-
-                a{
-                    display: flex;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        filter: brightness(0.7);
-                transition: 0.7s;
-                    }
-                }
-                .row-text{
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    padding: 1% 2%;
-                    line-height: 1.5;
-                    overflow: hidden;
-                transition: 0.7s;
-
-                    p{
-                        font-size: var(--fs-1);
-                        color: white;
-                    }
-                    h2{
-                        font-size: var(--fs-h2);
-                        color: white;
-                    }
-                    h3{
-                        font-size: var(--fs-1);
-                        color: rgb(199, 199, 199);
-                        font-weight: lighter;
-                    }
-                    button{
-                        font-size: var(--fs-1);
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                         width: 40%;
-                        padding: 1% 0;
-                        background-color: transparent;
-                        border: none;
-                        outline: none;
-                        color: white;
-                        transform: translateY(120%);
-                transition: 0.7s;
-                opacity: 0;
-                        i{
-                            color: red;
-                        }                        
-                    }                    
-                }
-                &:hover{
-                    a{
-                        img{
-                            transform: scale(1.05);
-                        filter: brightness(0.5);
-                        }
-                    }
-                    .row-text{
-                        padding-bottom: 3%;
-                        button{
-                         transform: translateY(0);
-                    transition: 0.7s;
-                    opacity: 1;
-                        }
-                    }
-                }
-            }
-            // ========= two
-            .two{
-                width: 32%;
-                position: relative;
-                overflow: hidden;
-                a{
-                    display: flex;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        filter: brightness(0.9);
-                transition: 0.7s;
-                    }
-                }
-                .row-text{
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    padding: 1% 2%;
-                    line-height: 1.5;
-                    overflow: hidden;
-                transition: 0.7s;
-                p{
-                    font-size: var(--fs-1);
-                    color: white;
-                }
-                h2{
-                    font-size: var(--fs-h2);
-                    color: white;
-                }
-                h3{
-                    font-size: var(--fs-1);
-                    color: rgb(199, 199, 199);
-                    font-weight: lighter;
-                }
-                button{
-                    font-size: var(--fs-1);
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    width: 60%;
-                    padding: 1% 0;
-                    background-color: transparent;
-                    border: none;
-                    outline: none;
-                    color: white;
-                    transform: translateY(120%);
+            justify-content: space-between;
+            width: 40%;
+            padding: 1% 0;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            transform: translateY(120%);
             transition: 0.7s;
             opacity: 0;
-                    i{
-                        color: red;
-                    }                        
-                }         
-             }
-             &:hover{
-                a{
-                    img{
-                        transform: scale(1.05);
-                    filter: brightness(0.7);
-                    }
-                }
-                .row-text{
-                    padding-bottom: 3%;
-                    button{
-                     transform: translateY(0);
-                transition: 0.7s;
-                opacity: 1;
-                    }
-                }
+            i {
+              color: red;
             }
-                
-            }
-
+          }
         }
-        // ====================== Second Row =====================
-        .second-row{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            // ============ three
-            .three{
-                width: 32%;
-                position: relative;
-                overflow: hidden;
-                a{
-                    display: flex;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        filter: brightness(0.9);
-                transition: 0.7s;
-                    }
-                }
-                .row-text{
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    padding: 1% 2%;
-                    line-height: 1.5;
-                    overflow: hidden;
-                transition: 0.7s;
-                p{
-                    font-size: var(--fs-1);
-                    color: white;
-                }
-                h2{
-                    font-size: var(--fs-h2);
-                    color: white;
-                }
-                h3{
-                    font-size: var(--fs-1);
-                    color: rgb(199, 199, 199);
-                    font-weight: lighter;
-                }
-                button{
-                    font-size: var(--fs-1);
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    width: 35%;
-                    padding: 1% 0;
-                    background-color: transparent;
-                    border: none;
-                    outline: none;
-                    color: white;
-                    transform: translateY(120%);
-            transition: 0.7s;
-            opacity: 0;
-                    i{
-                        color: red;
-                    }                        
-                }         
-             }
-             &:hover{
-                a{
-                    img{
-                        transform: scale(1.05);
-                    filter: brightness(0.7);
-                    }
-                }
-                .row-text{
-                    padding-bottom: 3%;
-                    button{
-                     transform: translateY(0);
-                transition: 0.7s;
-                opacity: 1;
-                    }
-                }
+        &:hover {
+          a {
+            img {
+              transform: scale(1.05);
+              filter: brightness(0.5);
             }
-                
+          }
+          .row-text {
+            padding-bottom: 3%;
+            button {
+              transform: translateY(0);
+              transition: 0.7s;
+              opacity: 1;
             }
-            // ========== four
-            .four{
-                width: 66%;
-                position: relative;
-                overflow: hidden;
-
-                a{
-                    display: flex;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        filter: brightness(0.7);
-                transition: 0.7s;
-                    }
-                }
-                .row-text{
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    padding: 1% 2%;
-                    line-height: 1.5;
-                    overflow: hidden;
-                transition: 0.7s;
-
-                    p{
-                        font-size: var(--fs-1);
-                        color: white;
-                    }
-                    h2{
-                        font-size: var(--fs-h2);
-                        color: white;
-                    }
-                    h3{
-                        font-size: var(--fs-1);
-                        color: rgb(199, 199, 199);
-                        font-weight: lighter;
-                    }
-                    button{
-                        font-size: var(--fs-1);
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        width: 25%;
-                        padding: 1% 0;
-                        background-color: transparent;
-                        border: none;
-                        outline: none;
-                        color: white;
-                        transform: translateY(120%);
-                transition: 0.7s;
-                opacity: 0;
-                        i{
-                            color: red;
-                        }                        
-                    }                    
-                }
-                &:hover{
-                    a{
-                        img{
-                            transform: scale(1.05);
-                        filter: brightness(0.5);
-                        }
-                    }
-                    .row-text{
-                        padding-bottom: 3%;
-                        button{
-                         transform: translateY(0);
-                    transition: 0.7s;
-                    opacity: 1;
-                        }
-                    }
-                }
-            }
+          }
         }
-        // ====================== Third Row =====================
-        .third-row{
-            margin: 3% 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .five,.six,.seven{
-                width: 32%;
-                position: relative;
-                overflow: hidden;
-                a{
-                    display: flex;
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        filter: brightness(0.9);
-                        transition: 0.7s;
-                    }
-                }
-                .row-text{
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    padding: 1% 2%;
-                    line-height: 1.5;
-                    overflow: hidden;
-                transition: 0.7s;
-
-                    p{
-                        font-size: var(--fs-1);
-                        color: white;
-                    }
-                    h2{
-                        font-size: var(--fs-h2);
-                        color: white;
-                    }
-                    h3{
-                        font-size: var(--fs-1);
-                        color: rgb(199, 199, 199);
-                        font-weight: lighter;
-                    }
-                    button{
-                        font-size: var(--fs-1);
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        width: 31%;
-                        padding: 1% 0;
-                        background-color: transparent;
-                        border: none;
-                        outline: none;
-                        color: white;
-                        transform: translateY(120%);
-                transition: 0.7s;
-                opacity: 0;
-                        i{
-                            color: red;
-                        }                        
-                    }                    
-                }
-                &:hover{
-                    a{
-                        img{
-                            transform: scale(1.05);
-                        filter: brightness(0.5);
-                        }
-                    }
-                    .row-text{
-                        padding-bottom: 3%;
-                        button{
-                         transform: translateY(0);
-                    transition: 0.7s;
-                    opacity: 1;
-                        }
-                    }
-                }
-                
-            }
-        }
-    }
-    // ================== Fruits baner =================
-    .fruits-baner{
-        width: 100%;
+      }
+      // ========= two
+      .two {
+        width: 32%;
         position: relative;
-        a{
-            display: flex;
-            img{
-                height: 100%;
-                width: 100%;
-            }
+        overflow: hidden;
+        a {
+          display: flex;
+          img {
+            width: 100%;
+            height: 100%;
+            filter: brightness(0.9);
+            transition: 0.7s;
+          }
         }
-        .baner-btn{
-            width: 22%;
-            position: absolute;
+        .row-text {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 1% 2%;
+          line-height: 1.5;
+          overflow: hidden;
+          transition: 0.7s;
+          p {
+            font-size: var(--fs-1);
+            color: white;
+          }
+          h2 {
+            font-size: var(--fs-h2);
+            color: white;
+          }
+          h3 {
+            font-size: var(--fs-1);
+            color: rgb(199, 199, 199);
+            font-weight: lighter;
+          }
+          button {
+            font-size: var(--fs-1);
             display: flex;
-            justify-content: flex-end;
-            bottom: 0;
-            padding-bottom: 5%;
-            button{
-                font-size:var(--fs-1);
-                border: 1px white solid;
-                background-color: transparent;
-                padding: 2% 7%;
-                cursor: pointer;
-                transition: 0.7s;
-                color: white;
-                &:hover{
-                    border: 1px red solid;
-                    background-color: red;
-                    color:white;
-                }
-
+            align-items: center;
+            justify-content: space-between;
+            width: 60%;
+            padding: 1% 0;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            transform: translateY(120%);
+            transition: 0.7s;
+            opacity: 0;
+            i {
+              color: red;
             }
+          }
         }
+        &:hover {
+          a {
+            img {
+              transform: scale(1.05);
+              filter: brightness(0.7);
+            }
+          }
+          .row-text {
+            padding-bottom: 3%;
+            button {
+              transform: translateY(0);
+              transition: 0.7s;
+              opacity: 1;
+            }
+          }
+        }
+      }
     }
-    // ================= News Events =================
-    .news{
-        border: 1px red solid;
-        width: 70%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        h1{
-            text-align: center;
-            width: 20%;
-            position: relative;
-            font-size: var(--fs-h1);
-            padding: 0.5% 0;
-            &::after{
-                content: "";
-                background-color: red;
-                width: 3vw;
-                height: 0.2vw;
-                position: absolute;
-                bottom: 0;
-                right: 50%;
-                left: 40%;
-                top: 100%;
-            }
+    // ====================== Second Row =====================
+    .second-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // ============ three
+      .three {
+        width: 32%;
+        position: relative;
+        overflow: hidden;
+        a {
+          display: flex;
+          img {
+            width: 100%;
+            height: 100%;
+            filter: brightness(0.9);
+            transition: 0.7s;
+          }
         }
-        .news-con{
-        margin-top: 5%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        div{
-            width: 32%;
-            position: relative;
-            a{
-                display: flex;
-                img{
-                    width: 100%;
-                    height: 100%;
-                }
+        .row-text {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 1% 2%;
+          line-height: 1.5;
+          overflow: hidden;
+          transition: 0.7s;
+          p {
+            font-size: var(--fs-1);
+            color: white;
+          }
+          h2 {
+            font-size: var(--fs-h2);
+            color: white;
+          }
+          h3 {
+            font-size: var(--fs-1);
+            color: rgb(199, 199, 199);
+            font-weight: lighter;
+          }
+          button {
+            font-size: var(--fs-1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 35%;
+            padding: 1% 0;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            transform: translateY(120%);
+            transition: 0.7s;
+            opacity: 0;
+            i {
+              color: red;
             }
-            .event{
-                position: absolute;
-                top: 0;
-                padding: 2% 3%;
-                color: white;
-                text-transform:uppercase;
-                background-color: rgba(128, 128, 128, 0.39);
+          }
+        }
+        &:hover {
+          a {
+            img {
+              transform: scale(1.05);
+              filter: brightness(0.7);
             }
-            // ========= new text
-            .news-text{
-                width: 100%;
-                padding: 2%;
+          }
+          .row-text {
+            padding-bottom: 3%;
+            button {
+              transform: translateY(0);
+              transition: 0.7s;
+              opacity: 1;
+            }
+          }
+        }
+      }
+      // ========== four
+      .four {
+        width: 66%;
+        position: relative;
+        overflow: hidden;
+
+        a {
+          display: flex;
+          img {
+            width: 100%;
+            height: 100%;
+            filter: brightness(0.7);
+            transition: 0.7s;
+          }
+        }
+        .row-text {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 1% 2%;
+          line-height: 1.5;
+          overflow: hidden;
+          transition: 0.7s;
+
+          p {
+            font-size: var(--fs-1);
+            color: white;
+          }
+          h2 {
+            font-size: var(--fs-h2);
+            color: white;
+          }
+          h3 {
+            font-size: var(--fs-1);
+            color: rgb(199, 199, 199);
+            font-weight: lighter;
+          }
+          button {
+            font-size: var(--fs-1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 25%;
+            padding: 1% 0;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            transform: translateY(120%);
+            transition: 0.7s;
+            opacity: 0;
+            i {
+              color: red;
+            }
+          }
+        }
+        &:hover {
+          a {
+            img {
+              transform: scale(1.05);
+              filter: brightness(0.5);
+            }
+          }
+          .row-text {
+            padding-bottom: 3%;
+            button {
+              transform: translateY(0);
+              transition: 0.7s;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+    // ====================== Third Row =====================
+    .third-row {
+      margin: 3% 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .five,
+      .six,
+      .seven {
+        width: 32%;
+        position: relative;
+        overflow: hidden;
+        a {
+          display: flex;
+          img {
+            width: 100%;
+            height: 100%;
+            filter: brightness(0.9);
+            transition: 0.7s;
+          }
+        }
+        .row-text {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 1% 2%;
+          line-height: 1.5;
+          overflow: hidden;
+          transition: 0.7s;
+
+          p {
+            font-size: var(--fs-1);
+            color: white;
+          }
+          h2 {
+            font-size: var(--fs-h2);
+            color: white;
+          }
+          h3 {
+            font-size: var(--fs-1);
+            color: rgb(199, 199, 199);
+            font-weight: lighter;
+          }
+          button {
+            font-size: var(--fs-1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 31%;
+            padding: 1% 0;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            color: white;
+            transform: translateY(120%);
+            transition: 0.7s;
+            opacity: 0;
+            i {
+              color: red;
+            }
+          }
+        }
+        &:hover {
+          a {
+            img {
+              transform: scale(1.05);
+              filter: brightness(0.5);
+            }
+          }
+          .row-text {
+            padding-bottom: 3%;
+            button {
+              transform: translateY(0);
+              transition: 0.7s;
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+  // ================== Fruits baner =================
+  .fruits-baner {
+    width: 100%;
+    position: relative;
+    a {
+      display: flex;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .baner-btn {
+      width: 22%;
+      position: absolute;
+      display: flex;
+      justify-content: flex-end;
+      bottom: 0;
+      padding-bottom: 5%;
+      button {
+        font-size: var(--fs-1);
+        border: 1px white solid;
+        background-color: transparent;
+        padding: 2% 7%;
+        cursor: pointer;
+        transition: 0.7s;
+        color: white;
+        &:hover {
+          border: 1px red solid;
+          background-color: red;
+          color: white;
+        }
+      }
+    }
+  }
+  // ================= News Events =================
+  .news {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2%;
+    h1 {
+      text-align: center;
+      width: 20%;
+      position: relative;
+      font-size: var(--fs-h1);
+      padding: 0.5% 0;
+      &::after {
+        content: "";
+        background-color: red;
+        width: 3vw;
+        height: 0.2vw;
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        left: 40%;
+        top: 100%;
+      }
+    }
+    .news-con {
+      margin-top: 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .news-div {
+        width: 32%;
+        position: relative;
+        min-height: 22vw;
+        a {
+          display: flex;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .event {
+          position: absolute;
+          top: 0;
+          padding: 2% 3%;
+          color: white;
+          text-transform: uppercase;
+          background-color: rgba(128, 128, 128, 0.699);
+          font-size: calc(var(--fs-1) - 0.2vw);
+        }
+        // ========= new text
+        .news-text {
+          width: 100%;
+          padding: 2%;
+          display: flex;
+          flex-direction: column;
+          line-height: 1.5;
+          background-color: rgb(241, 241, 241);
+
+          span {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            h2 {
+              font-size: calc(var(--fs-h2) - 0.3vw);
+            }
+            .news-icons {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              width: 100%;
+              .loc {
+                width: 40%;
                 display: flex;
-                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                font-size: calc(var(--fs-1) - 0.2vw);
+              }
+              .cal {
+                width: 48%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: calc(var(--fs-1) - 0.2vw);
+              }
+            }
+          }
+          p {
+            font-size: calc(var(--fs-1) - 0.1vw);
+          }
+        }
+        //    ============
+      }
+      .news-div-third {
+        width: 32%;
+        height: 22vw;
+        overflow-y: scroll;
+        background-color: rgb(241, 241, 241);
+        position: relative;
+        .third-con{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 120%;
+            // padding-top: 7%;
+            
+            span{
                 line-height: 1.5;
-                span{
-                    display: flex;
-                    flex-direction: column;
-                    width: 80%;
-                    h2{
-                        font-size: calc(var(--fs-h2) - 0.3vw);
-                    }
-                    .news-icons{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        width: 100%;
-                        .loc{
-                            width: 40%;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            font-size: calc(var(--fs-1) - 0.2vw);
-                        }
-                        .cal{
-                            width: 48%;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                            font-size: calc(var(--fs-1) - 0.2vw);
-                        }
-                    }
+            padding: 2%;
 
-                }
                 p{
-                    font-size: calc(var(--fs-1) - 0.1vw);
+                 font-size: calc(var(--fs-h2) - 0.3vw);
+                 font-weight: bold;
                 }
-            }
-            &:nth-child(2){
-                width: 31.5%;
+                small{
+                    font-size: calc(var(--fs-1) - 0.2vw);
+                    color: gray;
+                }
+                
+                
             }
         }
-     }
+        &::-webkit-scrollbar{
+            background-color: transparent;
+            width: 0.3vw;
+        }
+        &::-webkit-scrollbar-thumb{
+            background-color: gray;
+            border-radius: 20px;
+        }
+        .type{
+            position: sticky;
+            width: 15%;
+            top: 0;
+            left: 0;
+            padding: 2%;
+            color: white;
+            background-color: rgba(128, 128, 128, 0.699);
+          font-size: calc(var(--fs-1) - 0.2vw);
+        }
+      }
     }
+  }
 }
