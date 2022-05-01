@@ -30,10 +30,24 @@
           ></i>
         </button>
         <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-solid fa-bars-staggered"></i>
+        <i onclick="button()" class="fa-solid fa-bars-staggered"></i>
       </div>
     </header>
     <main>
+      <!-- =============== Menu Mobile ================ -->
+      <div id="dropMenu" class="menu">
+        <ul>
+          <li><a href="#new">What's New</a></li>
+          <li><a href="#news">News & Events</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+       <div id="exit">
+          <div onclick="exit()" class="exitCon" >
+            <i class="fa-solid fa-circle-xmark"></i>
+            <p>Exit</p>
+          </div>
+       </div>
+      </div>
       <!-- ======== baner =============== -->
       <div class="baner">
         <a class="des" href="#"><img src="./images/baner.webp" alt="" /></a>
@@ -43,7 +57,7 @@
         </div>
       </div>
       <!-- ============= Whats New ============ -->
-      <div class="whatsNew">
+      <div id="new" class="whatsNew">
         <h1>What's New</h1>
         <!-- =========================== First row ================ -->
         <div class="first-row">
@@ -133,7 +147,7 @@
         </div>
       </div>
       <!-- ================== News Events =========== -->
-      <div class="news">
+      <div id="news" class="news">
         <h1>News & Events</h1>
         <div class="news-con">
           <!-- ==================== One =========== -->
@@ -234,9 +248,8 @@
           <button>More News</button>
         </div>
       </div>
-    </main>
-    <!-- ======================= Footer ======================== -->
-    <footer>
+       <!-- ======================= Footer ======================== -->
+    <footer id="about">
       <div class="footer-con">
         <!-- =============== form -->
         <div class="footer-form">
@@ -287,5 +300,7 @@
         </div>
       </div>
     </footer>
+    </main>
+   <script src="./javascript/index.js"></script>
   </body>
 </html>

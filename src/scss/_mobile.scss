@@ -6,6 +6,7 @@
     }
     header{
         padding: 3% 5%;
+        z-index: 3;
         .logo{
             width: 18%;
         }
@@ -14,7 +15,7 @@
             
         }
         .header-icons{
-            width: 25%;
+            width: 28%;
             button{
                 font-size: calc(var(--fs-1) + 0.2vw);
                 border: 1px gray solid;
@@ -33,6 +34,7 @@
     }
     // =================== baner ===========
     main{
+        position: relative;
         // ============= baner ===========
         .baner{
             .des{
@@ -188,8 +190,64 @@
                 width: 50%;
             }
         }
-    }
-    // ========================= FOOTER ======================
+        .menu{
+            display: block;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 1;
+            width: 100%;
+            background-color: rgba(218, 165, 32, 0.808);
+            height: 100vw;
+            padding: 10% 5%;
+            transition: 0.7s;
+            animation: menu 1s ;
+           ul{
+               height: 100%;
+               display: flex;
+               flex-direction: column;
+               justify-content: space-around;
+            //    padding-top: 5%;
+               li{
+                   list-style: none;
+                   border-bottom: 1px white dashed;
+                   white-space: nowrap;
+                   a{
+                       text-decoration: none;
+                       font-size: var(--fs-h1);
+                       display: flex;
+                       padding: 5% 0;
+                       color: white;
+                     
+                   }
+               }
+           }
+         #exit{
+            display: flex;
+            justify-content: flex-end;
+            .exitCon{
+                width: 0%;
+                overflow: hidden;
+                animation: exit 3s forwards ;
+                animation-delay: 1s;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .fa-circle-xmark{
+                    font-size: calc(var(--fs-h1) + 1vw);
+                    color: red;
+                 width: fit-content;
+                 animation: exitButton 5s ;
+                }
+                p{
+                    font-size: var(--fs-h1);
+                    margin-left: 5%;
+                    color: white;
+                }
+               }
+         }
+        }
+         // ========================= FOOTER ======================
     footer{
         .footer-con{
             width: 100%;
@@ -211,4 +269,42 @@
         }
     }
 
+    }
+    @keyframes menu {
+        from{
+            width: 20%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+    @keyframes menuUp {
+        from{
+            width: 100%;
+        }
+        to{
+            width: 0%;
+        }
+    }
+    @keyframes exit {
+        from{
+           
+            width: 0%;
+        }
+        to{
+           
+            width: 100%;
+           
+        }
+    }
+    @keyframes exitButton {
+        from{
+            transform: rotateZ(0turn);
+
+        }
+        to{
+            transform: rotateZ(4turn);
+        }
+    }
+   
 }
