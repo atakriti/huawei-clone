@@ -5,6 +5,9 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
     .logo{
         width: 7%;
         a{
@@ -28,6 +31,7 @@ header{
                 color: black;
                 font-size: 0.8vw;
             }
+            
         }
     }
     // ==========

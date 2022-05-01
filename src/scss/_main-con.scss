@@ -1,8 +1,10 @@
 /*
+- Header in header file
 - baner line 5
 - Whats New line 39
 - Fruits baner line 451
--
+- News && Events line 484
+- Footer in footer file
 */
 main {
   .baner {
@@ -623,6 +625,28 @@ main {
           font-size: calc(var(--fs-1) - 0.2vw);
         }
       }
+    }
+    // =============== News Buttons ===================
+    .news-buttons{
+        width: 27%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3%;
+        button{
+            font-size: var(--fs-1);
+            background-color: transparent;
+            border: 1px black solid;
+            padding: 2% 7%;
+            outline: none;
+            cursor: pointer;
+            transition: 0.7s;
+            &:hover{
+                background-color: red;
+                color: white;
+                border: 1px red solid;
+            }
+        }
     }
   }
 }

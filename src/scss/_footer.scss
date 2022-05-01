@@ -1,0 +1,69 @@
+footer{
+    background-color: #f2f2f2;
+    padding: 3% 0;
+    .footer-con{
+        width: 70%;
+        margin: 0 auto;
+        // ============================== Form
+        .footer-form{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1% 0;
+            border-bottom: 1px gray solid;
+            a{
+                font-size: var(--fs-1);
+                text-decoration: none;
+                color: black;
+            }
+            form{
+                border: 1px gray solid;
+                width: 30%;
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: white;
+                padding: 0.5% 0;
+                input{
+                    width: 100%;
+                    font-size: var(--fs-1);
+                    padding: 1%;
+                    padding-left: 3%;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                }
+                i{
+                    font-size: var(--fs-h2);
+                    padding: 1% 2%;
+                    border-left: 1px black solid;
+                }
+              
+            }
+        }
+        // ================================= Form Links
+        .footer-links{
+            display: flex;
+            justify-content: space-between;
+            padding: 3% 0;
+            ul{
+                width: 19%;
+                line-height: 1.6;
+                p{
+                    font-weight: bold;
+                    font-size: var(--fs-1);
+                    margin-bottom: 2%;
+                }
+                li{
+                    list-style: none;
+                    a{
+                        display: flex;
+                        text-decoration: none;
+                        color: black;
+                        font-size: calc(var(--fs-1) - 0.2vw);
+                    }
+                }
+            }
+        }
+    }
+}
