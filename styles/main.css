@@ -3,6 +3,7 @@ html {
   --fs-1:1vw;
   --fs-h1:2vw;
   --fs-h2:1.3vw;
+  --footer:0.8vw;
 }
 
 header {
@@ -616,7 +617,7 @@ main .news .news-con .news-div .event {
   color: white;
   text-transform: uppercase;
   background-color: rgba(128, 128, 128, 0.699);
-  font-size: calc(var(--fs-1) - 0.2vw);
+  font-size: var(--footer);
 }
 main .news .news-con .news-div .news-text {
   width: 100%;
@@ -632,7 +633,7 @@ main .news .news-con .news-div .news-text span {
   width: 80%;
 }
 main .news .news-con .news-div .news-text span h2 {
-  font-size: calc(var(--fs-h2) - 0.3vw);
+  font-size: var(--footer);
 }
 main .news .news-con .news-div .news-text span .news-icons {
   display: flex;
@@ -645,21 +646,21 @@ main .news .news-con .news-div .news-text span .news-icons .loc {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: calc(var(--fs-1) - 0.2vw);
+  font-size: var(--footer);
 }
 main .news .news-con .news-div .news-text span .news-icons .cal {
   width: 48%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: calc(var(--fs-1) - 0.2vw);
+  font-size: var(--footer);
 }
 main .news .news-con .news-div .news-text p {
-  font-size: calc(var(--fs-1) - 0.1vw);
+  font-size: var(--footer);
 }
 main .news .news-con .news-div-third {
   width: 32%;
-  height: 21.6vw;
+  height: 20.7vw;
   overflow-y: scroll;
   background-color: rgb(241, 241, 241);
   position: relative;
@@ -675,11 +676,11 @@ main .news .news-con .news-div-third .third-con span {
   padding: 2%;
 }
 main .news .news-con .news-div-third .third-con span p {
-  font-size: calc(var(--fs-h2) - 0.3vw);
+  font-size: var(--footer);
   font-weight: bold;
 }
 main .news .news-con .news-div-third .third-con span small {
-  font-size: calc(var(--fs-1) - 0.2vw);
+  font-size: var(--footer);
   color: gray;
 }
 main .news .news-con .news-div-third::-webkit-scrollbar {
@@ -698,7 +699,7 @@ main .news .news-con .news-div-third .type {
   padding: 2%;
   color: white;
   background-color: rgba(128, 128, 128, 0.699);
-  font-size: calc(var(--fs-1) - 0.2vw);
+  font-size: var(--footer);
 }
 main .news .news-buttons {
   width: 27%;
@@ -789,7 +790,7 @@ main footer .footer-con .footer-links ul li a {
   display: flex;
   text-decoration: none;
   color: black;
-  font-size: calc(var(--fs-1) - 0.2vw);
+  font-size: var(--footer);
 }
 
 @media only screen and (max-width: 800px) {
@@ -797,6 +798,7 @@ main footer .footer-con .footer-links ul li a {
     --fs-1: 3vw;
     --fs-h1: 4vw;
     --fs-h2: 3.5vw;
+    --footer:2.8vw;
   }
 
   header {
@@ -1058,13 +1060,6 @@ main .whatsNew .third-row .seven .row-text button {
     to {
       transform: rotateZ(4turn);
     }
-  }
-}
-@media only screen and (min-width: 1150px) {
-  html {
-    --fs-1: 0.8rem;
-    --fs-h1: 1.3rem;
-    --fs-h2: 1rem;
   }
 }
 * {
