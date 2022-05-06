@@ -527,7 +527,7 @@ main {
       .news-div {
         width: 32%;
         position: relative;
-        min-height: 22vw;
+         min-height: 22vw;
         a {
           display: flex;
           img {
@@ -542,7 +542,7 @@ main {
           color: white;
           text-transform: uppercase;
           background-color: rgba(128, 128, 128, 0.699);
-          font-size: calc(var(--fs-1) - 0.2vw);
+          font-size: var(--footer);
         }
         // ========= new text
         .news-text {
@@ -552,13 +552,13 @@ main {
           flex-direction: column;
           line-height: 1.5;
           background-color: rgb(241, 241, 241);
-
+          
           span {
             display: flex;
             flex-direction: column;
             width: 80%;
             h2 {
-              font-size: calc(var(--fs-h2) - 0.3vw);
+              font-size: var(--footer);
             }
             .news-icons {
               display: flex;
@@ -570,26 +570,26 @@ main {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: calc(var(--fs-1) - 0.2vw);
+                font-size:  var(--footer);
               }
               .cal {
                 width: 48%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                font-size: calc(var(--fs-1) - 0.2vw);
+                font-size:  var(--footer);
               }
             }
           }
           p {
-            font-size: calc(var(--fs-1) - 0.1vw);
+            font-size:  var(--footer);
           }
         }
         //    ============
       }
       .news-div-third {
         width: 32%;
-        height: 21.6vw;
+        height: 20.7vw;
         overflow-y: scroll;
         background-color: rgb(241, 241, 241);
         position: relative;
@@ -605,11 +605,11 @@ main {
             padding: 2%;
 
                 p{
-                 font-size: calc(var(--fs-h2) - 0.3vw);
+                 font-size:  var(--footer);
                  font-weight: bold;
                 }
                 small{
-                    font-size: calc(var(--fs-1) - 0.2vw);
+                    font-size:  var(--footer);
                     color: gray;
                 }
                 
@@ -632,7 +632,7 @@ main {
             padding: 2%;
             color: white;
             background-color: rgba(128, 128, 128, 0.699);
-          font-size: calc(var(--fs-1) - 0.2vw);
+          font-size:  var(--footer);
         }
       }
     }

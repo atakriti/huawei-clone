@@ -3,6 +3,7 @@
     --fs-1: 3vw;
     --fs-h1: 4vw;
     --fs-h2: 3.5vw;
+    --footer:2.8vw;
   }
   header {
     padding: 3% 5%;
@@ -299,10 +300,4 @@
   }
 }
 // =====================================
-@media only screen and (min-width: 1150px) {
-  html {
-    --fs-1: 0.8rem;
-    --fs-h1: 1.3rem;
-    --fs-h2: 1rem;
-  }
-}
+

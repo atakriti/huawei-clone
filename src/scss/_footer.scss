@@ -61,7 +61,7 @@ footer{
                         display: flex;
                         text-decoration: none;
                         color: black;
-                        font-size: calc(var(--fs-1) - 0.2vw);
+                        font-size: var(--footer);
                     }
                 }
             }
